@@ -3,14 +3,15 @@
 
 from tkinter import *
 from tkinter import messagebox
-from PIL import Image, ImageTk, ImageOps
+from PIL import Image,ImageTk, ImageOps
 import os
+print(os.getcwd())
 import numpy as np
 import cv2
 from tkinter import filedialog
 
 
-#from modules.load import Model
+# from modules.load import Model
 from threading import Thread
 import webbrowser
 from modules.nn import NeuralNetwork
@@ -103,16 +104,16 @@ class Paint(object):
 
 
     def Show(self):
-        '''
+
         self.c.postscript(file="tmp.ps", colormode="color")
         img = Image.open("tmp.ps")
-        img.save("out.png", "png")
+        img.save("/home/ccr/PycharmProjects/Tkinter/modules/out.png", "png")
         im =Image.open("out.png")
         inverted_image = ImageOps.invert(im)
         inverted_image.save("inverted.png")
         # inverted_image.show()
-        self.resizeAndSetImage(inverted_image)
-        '''
+        #self.resizeAndSetImage(inverted_image)
+
         hold = self.net.imageprepare("/home/ccr/PycharmProjects/Tkinter/modules/images/inverted.png")
         res = self.net.query(hold)
         print(np.argmax(res))
@@ -152,8 +153,7 @@ class Paint(object):
             # load the image from disk, convert it to grayscale, and detect  edges in it
             image = cv2.imread(path)
             gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-            x = np.asarray(gray);
+            x = np.asarray(gray)
             y = []
             for row in x:
                 for element in row:

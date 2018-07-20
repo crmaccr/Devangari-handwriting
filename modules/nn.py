@@ -4,6 +4,7 @@ import os
 from PIL import ImageFilter
 from PIL import Image
 
+
 class NeuralNetwork:
 
     def __init__(self, inputnodes, hiddennodes, outputnodes, learningrate):
