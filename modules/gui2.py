@@ -116,8 +116,18 @@ class Paint(object):
 
         hold = self.net.imageprepare("/home/ccr/PycharmProjects/Tkinter/modules/out.png")
         res = self.net.query(hold)
-        print(np.argmax(res))
+        char = np.argmax(res)
+        print(char)
+        char2 = self.numbers_to_strings(char)
 
+        self.predictionLabel.insert(END, "This is a {}".format(char2))
+
+    def numbers_to_strings(self,argument):
+        switcher = {0: "०",
+                    1: "१",
+                    2: "२"
+                    }
+        return switcher.get(argument, "nothing")
 
     def use_eraser(self):
         self.predictionLabel.delete(1.0, END)
