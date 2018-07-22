@@ -3,6 +3,8 @@ import scipy.special
 import os
 from PIL import ImageFilter
 from PIL import Image
+import cv2
+from modules.preprocess import makeSquare,resize_to_pixel
 
 
 class NeuralNetwork:
@@ -100,7 +102,7 @@ class NeuralNetwork:
                 pass
             print("training done")
             pass
-
+    ''''
     def imageprepare(self,argv):
         im = Image.open(argv).convert('L')
         width = float(im.size[0])
@@ -136,8 +138,63 @@ class NeuralNetwork:
         # return tv
         tva = [x * 0.99 / 255.0 + 0.01 for x in tv]
         return tva
+        
+        '''
 
+    def imageprepare(self,img):
+        image = cv2.imread(img)
+        final = image
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        #cv2.imshow("image", image)
+        #cv2.imshow("gray", gray)
+        #cv2.waitKey(0)
 
-    
+        # Blur image then find edges using Canny
+        blurred = cv2.GaussianBlur(gray, (5, 5), 0)
+        #cv2.imshow("blurred", blurred)
+        #cv2.waitKey(0)
 
+        edged = cv2.Canny(blurred, 30, 150)
+        #cv2.imshow("edged", edged)
+        #cv2.waitKey(0)
+
+        # Find Contours
+        _, contours, hierarchy = cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        # print("Number of contours found = ", len(contours))
+        # print(type(contours))
+        # print(contours)
+
+        # Sort out contours left to right by using their x cordinates
+        # contours = sorted(contours, key = x_cord_contour, reverse = False)
+
+        # Create empty array to store entire number
+
+        # loop over the contours
+
+        for c in contours:
+            # compute the bounding box for the rectangle
+            (x, y, w, h) = cv2.boundingRect(c)
+
+            # cv2.drawContours(image, contours, -1, (0,255,0), 3)
+            # cv2.imshow("Contours", image)
+
+            if w >= 5 and h >= 25:
+                roi = blurred[y:y + h, x:x + w]
+                ret, roi = cv2.threshold(roi, 127, 255, cv2.THRESH_BINARY_INV)
+                squared = makeSquare(roi)
+                final = resize_to_pixel(32, squared)
+                #cv2.imshow("final", final)
+                #cv2.imwrite('images/final.png', final)
+
+                # draw a rectangle around the digit, the show what the
+                # digit was classified as
+        #cv2.waitKey(0)
+        x = np.asarray(final)
+        y = []
+        for row in x:
+            for element in row:
+                y.append(element)
+        ret = [k * 0.99 / 255.0 + 0.01 for k in y]
+        #cv2.destroyAllWindows()
+        return ret
 

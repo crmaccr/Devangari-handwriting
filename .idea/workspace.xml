@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dbe661a-8cc4-4e8c-ab18-0cdc174effb5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Tkinter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tkinter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/gui2.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/gui2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/nn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/out.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/out.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/sample.png" beforeDir="false" afterPath="$PROJECT_DIR$/modules/sample.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/tmp.ps" beforeDir="false" afterPath="$PROJECT_DIR$/modules/tmp.ps" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gui2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gui2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/gui2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#48#69#0" expanded="true" />
               </folding>
@@ -31,16 +28,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="out.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/out.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="nnet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/nnet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="nn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
-              <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+            <state relative-caret-position="149">
+              <caret line="146" column="27" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -48,39 +49,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/images/sample.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="sample28.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/images/sample28.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="inverted.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/images/inverted.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="test_digit.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/test_digit.csv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="sample.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/sample.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="tmp.ps" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/tmp.ps">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="train_digit.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/train_digit.csv">
-          <provider selected="true" editor-type-id="LargeFileEditor" />
+      <file leaf-file-name="preprocess.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/preprocess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -111,12 +89,13 @@
         <option value="$PROJECT_DIR$/pckg/gui2.py" />
         <option value="$PROJECT_DIR$/modules/Image2mnist.py" />
         <option value="$PROJECT_DIR$/modules/nnet.py" />
-        <option value="$PROJECT_DIR$/modules/nn.py" />
         <option value="$PROJECT_DIR$/modules/2mnist.py" />
         <option value="$PROJECT_DIR$/modules/Dialog.py" />
         <option value="$PROJECT_DIR$/BrowseImg.py" />
         <option value="$PROJECT_DIR$/modules/browsemodified.py" />
+        <option value="$PROJECT_DIR$/modules/preprocess.py" />
         <option value="$PROJECT_DIR$/modules/gui2.py" />
+        <option value="$PROJECT_DIR$/modules/nn.py" />
       </list>
     </option>
   </component>
@@ -310,15 +289,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24125093" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24125093" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.1801936" weight="0.0" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3231571" side_tool="true" visible="true" weight="0.2195122" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.32464632" side_tool="true" visible="true" weight="0.23902439" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3284553" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4996277" weight="0.3284553" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.67684287" weight="0.2195122" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6753537" visible="true" weight="0.23902439" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4996277" weight="0.44552845" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4988831" weight="0.0" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -353,13 +333,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Drawings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Soln.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -565,13 +538,6 @@
     <entry file="file://$PROJECT_DIR$/modules/2mnist.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/nnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/images/inverted5.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -609,28 +575,45 @@
     <entry file="file://$PROJECT_DIR$/modules/images/sample.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/out.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+        <state relative-caret-position="149">
+          <caret line="146" column="27" selection-start-line="146" selection-start-column="27" selection-end-line="146" selection-end-column="27" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/nnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/gui2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#48#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/out.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>

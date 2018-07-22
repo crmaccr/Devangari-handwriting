@@ -108,13 +108,13 @@ class Paint(object):
         self.c.postscript(file="tmp.ps", colormode="color")
         img = Image.open("tmp.ps")
         img.save("/home/ccr/PycharmProjects/Tkinter/modules/out.png", "png")
-        im =Image.open("out.png")
-        inverted_image = ImageOps.invert(im)
-        inverted_image.save("inverted.png")
+        # im =Image.open("out.png")
+        # inverted_image = ImageOps.invert(im)
+        # inverted_image.save("inverted.png")
         # inverted_image.show()
         #self.resizeAndSetImage(inverted_image)
 
-        hold = self.net.imageprepare("/home/ccr/PycharmProjects/Tkinter/modules/images/inverted.png")
+        hold = self.net.imageprepare("/home/ccr/PycharmProjects/Tkinter/modules/out.png")
         res = self.net.query(hold)
         print(np.argmax(res))
 
